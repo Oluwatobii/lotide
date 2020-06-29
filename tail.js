@@ -1,6 +1,11 @@
 // FUNCTION IMPLEMENTATION
-const tail = function (words) {
-  return words.slice(1);
+
+const tail = function (array) {
+  if (array.length > 1) {
+    return array.slice(1);
+  } else {
+    return [];
+  }
 };
 
 module.exports = tail;
